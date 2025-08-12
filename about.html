@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>about</title>
+        <meta name="viewport" content="width=device-width">
+        <style>
+            h2{
+                text-decoration: underline;
+                font-weight: bolder;
+                font-size: 2rem;
+                background-color: white;
+                width:fit-content;
+                border-radius: 4px;
+                margin-top: 19px;
+            }
+            p{
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+<button onclick="goBack()" style="position: fixed; top: 0;">⬅ Back</button>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+        <div class="about-us">
+            <h2 class="h">About us</h2>
+            <p>
+                SAGE Therapy is dedicated to providing compassionate and effective mental health services. Our team of licensed professionals offers personalized therapy sessions tailored to each individual's needs. We believe in fostering a supportive environment where clients can explore, heal, and grow.
+            </p>
+            <p>
+                With years of experience and a commitment to evidence-based practices, we strive to empower our clients on their journey toward well-being. Whether you are seeking support for anxiety, depression, relationship issues, or personal growth, SAGE Therapy is here to help.
+            </p>
+        </div>
+        <section style=" margin-top: 20px;">
+            <h2>Our Story</h2>
+            <p>
+                Founded from a passion for mental wellness, SAGE Therapy began with the vision of making expert therapy accessible to all. Our journey is rooted in the belief that everyone deserves support and guidance on their path to mental health.
+            </p>
+
+            <h2>Meet Our Therapists</h2>
+            <div style="display: flex; gap: 2rem; flex-wrap: wrap; background-color:rgb(175, 208, 216); border: 1px solid; justify-content: center; border-radius: 10px;">
+               <a href="./sage.html"> <div style="padding: 1rem; border-radius: 5px; width: 100%; text-align: center;">
+                    <img src="./assets/IMG_7696.JPG" alt="Therapist Jane Smith" style="width:150px; height:100px; border-radius:30%; object-fit:cover;">
+                    <h3>Salih Muhammed, S.M</h3>
+                    <p>Specialties: Anxiety, Trauma</p>
+                    <p>Credentials: Licensed therapist</p>
+                </div></a>
+                <!-- Add more therapist profiles as needed -->
+            </div>
+
+            <h2>Our Approach</h2>
+            <p>
+                We offer personalized, evidence-based online therapy tailored to your unique needs. Our therapists use proven methods to help you achieve meaningful progress in a safe, confidential environment.
+            </p>
+
+            <h2>Our Values</h2>
+            <ul style="margin-bottom: 50px;">
+                <li><strong>Empathy:</strong> We listen and support without judgment.</li>
+                <li><strong>Trust:</strong> Your privacy and comfort are our priorities.</li>
+                <li style="margin-bottom: 30px;"> <strong>Growth:</strong> We empower you to achieve lasting change.</li>
+            </ul>
+        </section>
+        <footer style="color: white; background-color: black; font-weight: 800; text-align: center;"> © Sage therapy. All rights reserved.</footer>
+    </body>
+</html>

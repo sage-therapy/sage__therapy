@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Service</title>
+        <meta name="viewport" content="width=device-width">
+        <style>
+             @media (max-width: 800px) {
+          h1{
+              font-size: 1.8rem;
+          }
+          p{
+            font-size: 1rem;
+        
+            border-radius: 5px;
+            width: fit-content;
+          }
+          .plan-price{
+            font-size: 1.2rem;
+            font-weight: bolder;
+          }
+          .plan-button{
+            background-color: rgb(189, 182, 182);
+            font-size: 1.2rem;
+          }
+          .pricing-container{
+             display: flex;
+             gap:5px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin:0 20px ;
+          }
+          .pricing-plan{
+            width: 100%;
+          }
+          .price{
+            position: relative;
+            left: 12;
+            background-color: rgb(240, 249, 252);
+          }
+      }
+      .pricing-plan{
+        align-items: center;
+        justify-content: center;
+        border-left: 3px solid ;
+        border-radius: 5PX;
+        background-color:rgb(96, 82, 177);
+        color: black;
+        padding: 20px;
+        height: 170px;
+      }
+      body{
+        background-color: rgb(244, 245, 245);
+        padding: 10px;
+      }
+      button{
+        background-color: rgb(40, 172, 224);
+      }
+      dt{
+        margin-bottom: 10px;
+      }
+      dd{
+        margin-bottom: 3px;
+      }
+        </style>
+    </head>
+    <body>
+          <button onclick="goBack()">⬅ Back</button>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+        <header>
+            <h1>SAGE Therapy Services</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" aria-current="page">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Our Services</h2>
+                <ul>
+                    <li>
+                        <strong><h2>Individual Counseling</h2></strong>
+                        <p>
+                            One-on-one sessions tailored to your unique needs. Our licensed therapists help you navigate personal challenges, manage stress, and foster personal growth in a confidential and supportive environment.
+                        </p>
+                    </li>
+                    <li>
+                        <strong><h2>Couples Therapy</h2></strong>
+                        <p>
+                            Strengthen your relationship through guided communication, conflict resolution, and emotional support. We work with couples at all stages to build trust and understanding.
+                        </p>
+                    </li>
+                    <li>
+                        <strong><h2>Group Sessions</h2></strong>
+                        <p>
+                            Join supportive group therapy sessions focused on shared experiences such as anxiety, grief, or life transitions. Group settings provide a sense of community and shared healing.
+                        </p>
+                    </li>
+                    <li>
+                        <strong><h2>Specialized Therapy</h2></strong>
+                        <ul style="display: flex;flex-direction: column;gap: 10px;">
+                            <li>
+                                <strong>Stress Management:</strong> Learn effective coping strategies and relaxation techniques to manage daily stressors.
+                            </li>
+                            <li>
+                                <strong>Mindfulness-Based Therapy:</strong> Enhance self-awareness and emotional regulation through mindfulness practices.
+                            </li>
+                            <li>
+                                <strong>Trauma-Informed Care:</strong> Compassionate support for individuals recovering from traumatic experiences.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Online Booking System</h2>
+                <p>
+                    Schedule your appointments easily with our integrated online booking system. Select your preferred therapist, choose a suitable time slot, and receive instant confirmation. Our calendar integration allows you to sync appointments with Google Calendar or Outlook for reminders and updates.
+                </p>
+                <a href="./booksession.html" class="button">Book an Appointment</a>
+            </section>
+
+            <section>
+                <h2>Pricing & Packages</h2>
+<hr/>
+    <div class="pricing-container" style="display: flex; justify-content: space-around; align-items: center;text-align: center;">
+       <div class="pricing-plan">
+             <div class="plan-title"><h2>Specialized Therapy</h2></div>
+             <div class="plan-price">3 hours</div>
+             <p class="price">20,000 naira<span style="display: block;">/session</span></p>
+             <button class="plan-button"><a href="./booksession.html">Sign Up</a></button>
+       </div>
+       <div class="pricing-plan">
+             <div class="plan-title"><h2>Group sessions</h2></div>
+             <div class="plan-price">90 minutes</div>
+             <p class="price">10,000 naira<span style="display: block;">/person</span></p>
+             <button class="plan-button"><a href="./booksession.html">Sign Up</a></button>
+       </div>
+       <div class="pricing-plan">
+              <div class="plan-title"><h2>Couples Therapy</h2></div>
+              <div class="plan-price">60 minutes</div>
+              <p class="price">50,000 naira<span style="display: block;">/session</span></p>
+              <button class="plan-button"><a href="./booksession.html">Sign Up</a></button>
+       </div>
+    </div>
+                     </div>
+                     <div></div>
+                     <div></div>
+                </div>     <hr/>
+                <h3>Package Options</h3>
+                <ul>
+                    <li>5-Session Package: 10% discount</li>
+                    <li>10-Session Package: 15% discount</li>
+                    <li>Sliding scale available for those in need. Please <a href="./contact.html">contact us</a> for details.</li>
+                </ul>
+            </section>
+<hr/>
+            <section>
+                <h2 style="text-decoration: underline; color: rgb(17, 55, 112);">FAQ</h2>
+                <dl>
+                    <dt>Do you offer virtual sessions?</dt>
+                    <dd>Yes, we provide secure video sessions for clients who prefer remote therapy.</dd><hr/>
+                    <dt>Are your therapists licensed?</dt>
+                    <dd>All our therapists are fully licensed and experienced in their respective fields.</dd><hr/>
+                    <dt>How do I reschedule or cancel an appointment?</dt>
+                    <dd>You can manage your appointments through our online booking system or contact our office directly.</dd>
+                </dl>
+            </section>
+        </main><hr/>
+
+        <footer style="color: rgb(243, 240, 240); padding: 0; background-color: black;">
+            <p>&copy; 2025 SAGE Therapy. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

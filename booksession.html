@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <title>book session</title>
+        <meta name="viewport" content="width=device-width">
+        <style>
+            body{
+                background-color: rgba(246, 251, 253, 0.856);
+            }
+            @media (max-width: 1250px){
+                h1{
+                    font-size: 50px;
+                }
+            }
+            button{
+                width: fit-content;
+                
+            }
+            input ,select{
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body style="width: 100%;">
+        <button onclick="goBack()" style="position: fixed; top: 0;">⬅ Back</button>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+        <div class="booking-container">
+            <h1 style="margin-bottom: 70px;">Book an appointment</h1><hr/>
+            <form id="booking-form" style="font-size: 1.02rem; display: flex; flex-direction: column; gap:30px">
+                <label for="therapist">Select Therapist:</label>
+                <select id="therapist" name="therapist" required>
+                    <option value="">Choose...</option>
+                    <option value="therapist2">Sage Therapy </option>
+                </select>
+
+                <label for="timeslot">Select Time Slot:</label>
+                <input type="datetime-local" id="timeslot" name="timeslot" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+            <button type="button" onclick="
+                const email = document.getElementById('email').value;
+                const therapist = document.getElementById('therapist').value;
+                const timeslot = document.getElementById('timeslot').value;
+                if (!email || !therapist || !timeslot) {
+                    alert('Please fill all fields.');
+                    return;
+                }
+                const subject = encodeURIComponent('New Booking Request');
+                const body = encodeURIComponent(
+                    `Hello, please I'd like to book a session appointment.\n\nBooking Details:\nTherapist: ${therapist}\nDate & Time: ${timeslot}\nClient Email: ${email}`
+                );
+                window.location.href = `mailto:muhammadsage88@gmail.com?subject=${subject}&body=${body}`;
+            ">Book Session</button>
+            
+            </form>
+            <p>
+                <a href="./cancelpolicy.html" target="_blank">Read our cancellation policy</a>
+            </p>
+        </div>
+
+        
+        <script>
+        
+
+        // Booking form submission
+        document.getElementById('booking-form').onsubmit = function(e) {
+            e.preventDefault();
+            // Simulate sending booking info to backend and triggering admin notification
+            appendMessage('You', 'I want to book a session.');
+            // Simulate confirmation email
+            alert('Booking submitted! Confirmation email sent.{NOTE}If you do not get a mail, kindly visit our contact page and chat directly with one of our specialist');
+        };
+
+        
+
+        function appendMessage(sender, message) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'chat-message';
+            msgDiv.innerHTML = `<strong>${sender}:</strong> ${message}`;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        
+        </script>
+    </body>
+</html>

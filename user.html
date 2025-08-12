@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <title>SAGE Therapy</title>
+        <meta name="viewport" content="width=device-width">
+        <style>
+            *{
+                width: fit-content;
+                box-sizing: border-box;
+            }
+            </style>
+    </head>
+    <body style="background-image: url('./assets/background-img2.png'); background-size: cover; background-position: center;width: fit-content;">
+        <button onclick="history.back()" style="position: fixed;">Go Back</button>
+        <div class="head">
+             <h1>sage therapy</h1>
+             <p class="slogan">healing begins here</p>
+        </div> <hr/>
+        <div class="goal">
+             <p class="ourgoal">Sali Muhammad Abdul-Rahman, with a strong foundation in behavioral psychology and a passion for understanding human potential, I’m dedicated to providing you with compassionate guidance.<span style="display: block;"> I leverage my experience in leadership and people dynamics to help you navigate challenges and foster your personal growth and well-being. I’m here to support your journey to a more fulfilling life.Sali Muhammad Abdul-Rahman, with a strong foundation in behavioral psychology and a passion for understanding human potential, I’m dedicated to providing you with compassionate guidance.</span><span style="display: block;"> I leverage my experience in leadership and people dynamics to help you navigate challenges and foster your personal growth and well-being. I’m here to support your journey to a more fulfilling life.</span></p>
+             <button><a href="./booksession.html" style="color: aliceblue;">Book a Session Now</a></button>
+        </div>
+        <hr/>
+             <div class="ratings">
+                  <h2 class="Testimonials">Reviews:</h2>
+                <p class="Testimonials stars">General rating: ⭐⭐⭐⭐</p>
+             <div class="testimonial-slider">
+               <blockquote class="testimonial active">
+                        <p>"Professional, compassionate, and effective. I am grateful for the positive changes in my life."</p>
+                        <p>Rating:⭐⭐⭐⭐⭐</p>
+                        <footer>- Jed E.</footer>
+               </blockquote>
+                     <blockquote class="testimonial">
+                    <p>"SAGE Therapy has truly changed my life. The support and understanding I received made all the difference."</p>
+                     <p>Rating:⭐⭐⭐⭐⭐</p>
+                    <footer>- Temidayo A.</footer>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <p>"I felt heard and valued from the very first session. Highly recommend their caring approach."</p>
+                    <p>Rating:⭐⭐⭐⭐</p>
+                    <footer>- David D.</footer>
+                </blockquote>
+                <blockquote class="testimonial">
+                        <p>"lost and completely hopeless, they took the time to study me, figure me out and understood me the way i never understood myself. I am grateful for the positive changes in my life."</p>
+                        <p>Rating:⭐⭐⭐⭐⭐</p>
+                        <footer>- Waris O.</footer>
+                </blockquote>
+                <blockquote class="testimonial">
+                        <p>"Professional and effective, definetely worth every penny spent, highly recommended".</p>
+                        <p>Rating:⭐⭐⭐⭐⭐</p>
+                        <footer>- Victoria O.</footer>
+                </blockquote>    
+                <blockquote class="testimonial">
+                        <p>"lost and completely hopeless, they took the time to study me, figure me out and understood me the way i never understood myself. I am grateful for the positive changes in my life."</p>
+                        <p>Rating:⭐⭐⭐⭐⭐</p>
+                        <footer>- Dickson O.</footer>
+                </blockquote>
+                </div>
+             
+        </div>
+                <hr/>
+                               
+        <div class="contact" style="width: 200px; padding: 0 10px;">
+             <a href="./contact.html">Contact us @</a>
+             <a href="./about.html">About us</a>
+             <a href="./services.html">Our services</a>
+             <a href="./resources.html">resources</a>
+        </div><hr/>
+         <footer>
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="./T&C.html">Terms of Service</a></li>
+                    <li>
+                        <form class="newsletter-signup" action="#" method="post">
+                            <label for="newsletter-email">Sign up for updates:</label>
+                            <input type="email" id="newsletter-email" name="email" placeholder="Your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="./accessibility.html">Accessibility Statement</a>
+                    </li>
+                    <li style="margin-bottom: 30px;">
+                        Language:
+                        <select name="language" aria-label="Select language">
+                            <option value="en">English</option>
+                            <option value="yo">Yoruba</option>
+                            <option value="ig">Igbo</option>
+                            <option value="ha">Hausa</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+         </footer>
+
+
+
+
+               <script>
+                    // Auto slideshow for testimonials
+                    let autoCurrent = 2;
+                    const autoTestimonials = document.querySelectorAll('.testimonial-slider .testimonial');
+                    function autoShowTestimonial(index) {
+                        autoTestimonials.forEach((el, i) => {
+                            el.classList.toggle('active', i === index);
+                            el.style.display = i === index ? 'block' : 'none';
+                        });
+                    }
+                    function autoNextTestimonial() {
+                        autoCurrent = (autoCurrent + 1) % autoTestimonials.length;
+                        autoShowTestimonial(autoCurrent);
+                    }
+                    setInterval(autoNextTestimonial, 2000); // Change every 4 seconds
+                    // Initialize first testimonial
+                    autoShowTestimonial(autoCurrent);
+                </script>
+
+                <script>
+                    const testimonials = document.querySelectorAll('.testimonial-slider .testimonial');
+                    let current = 0;
+
+                    function showTestimonial(index) {
+                        testimonials.forEach((el, i) => {
+                            el.classList.toggle('active', i === index);
+                            el.style.display = i === index ? 'block' : 'none';
+                        });
+                    }
+
+       
+
+                    showTestimonial(current);
+                </script>
+                <style>
+                    .testimonial-slider {
+                        position: relative;
+                        max-width: 500px;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                    .testimonial-slider .testimonial {
+                        display: none;
+                    }
+                    .testimonial-slider .testimonial.active {
+                        display: block;
+                    }
+                    .testimonial-slider button {
+                        margin: 19px 25px;
+                        padding: 5px 15px;
+                        cursor: pointer;
+                    }
+                </style>
+        </div>
+    </body>
+</html>

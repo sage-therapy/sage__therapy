@@ -1,0 +1,115 @@
+body{
+    height: 100vh;
+     color: #1F2D3D ;
+     background-color:#edf4fd;
+}
+h1{
+    text-transform:capitalize;
+    font-weight: bold;
+    font-size: 4.5rem;
+    margin: none;
+    padding: none;
+    text-align: center;
+    margin: 0 ;
+    color: #0d3458;
+}
+.head{
+    margin-bottom: none;
+    width: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+    display: flex;
+    flex-direction: column ;
+    gap: 20px;
+}
+.slogan{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 0;
+    grid-column:span 2 ;
+}
+.customer-review{
+    margin-bottom: 20px;
+    border-bottom: 2px solid ;
+    padding-bottom: 5px;
+}
+.goal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+button{ 
+    font-weight: 600;
+    border: 0;
+    font-size: 1.02rem;
+    border-radius: 4px;
+    background-color:#010918 ;
+    color: #d6e6fa;
+}
+.ourgoal{
+    font-size: 1.04rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #06000f;
+}
+.ratings{
+    background-color:#d6e6fa;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.Testimonials{
+    background-color: rgb(67, 114, 161);
+    display: inline-block;
+    width: 200px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 2px;
+    margin-top: 8px;
+    
+}
+.testimonial{
+    margin-bottom: 2px;
+    margin-top: 8px; 
+}
+.stars{
+    font-weight: bold;
+    font-size: 1.02rem;
+    padding-left: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 96%;
+    margin-right: 10px;
+}
+.contact{
+     font-size:x-large;
+     display:flex;
+     justify-content:space-around;
+     margin-bottom: 40px;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 5px solid black;
+    margin: 0;
+    padding: 3px;
+    border-top:0 ;
+    border-left: 0;
+    background-color: rgb(191, 217, 228);
+}
+  @media (max-width: 1250px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    .slogan{
+        font-size: 2.3rem;
+    }
+  }
+
